@@ -29,10 +29,10 @@ namespace CarLotSimulator
             c1.IsDriveable = true;
             RBCustoms.TheLot.Add(c1);
 
-            
+
 
             RBCustoms.TheLot.Add(new Car(1989, "Isuzu", "Rodeo", "BRUPBRUPBRUP", "beep beep", true));
-            
+
             RBCustoms.TheLot.Add(new Car() { EngineNoise = "            ", IsDriveable = true, HonkNoise = "MOVE! I'm RICH!", Make = "Tesla", Model = "Roadster", Year = 2016 });
 
             RBCustoms.TheLot.Add(new Motorcycle(2004, "BMW", "K1200GT", "HUMMMMMMMMM", "BEEEEEP", true));
@@ -48,7 +48,7 @@ namespace CarLotSimulator
             //It should have at least one property: a List of cars
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
-            
+
             bool done = false;
             Console.WriteLine("Have you added any new cars to the lot?");
 
@@ -77,7 +77,7 @@ namespace CarLotSimulator
             }
 
             RBCustoms.TakeInventory();
-
+            Console.WriteLine($"Your total number of vehicles is {CarLot.numberOfCars}.");
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }

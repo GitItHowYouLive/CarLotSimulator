@@ -11,6 +11,11 @@ namespace CarLotSimulator
             BikeCount++;
         }
 
+        ~Motorcycle()
+        {
+            BikeCount--;
+        }
+
         public Motorcycle(int year, string make, string model, string engine, string honk, bool ride)
         {
             Year = year;

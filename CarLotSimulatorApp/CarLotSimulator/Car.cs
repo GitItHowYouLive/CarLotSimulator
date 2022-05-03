@@ -12,6 +12,11 @@ namespace CarLotSimulator
             
         }
 
+        ~Car()
+        {
+            CarCount--;
+        }
+
         public Car(int year, string make, string model, string engine, string honk, bool drive)
         {
             Year = year;

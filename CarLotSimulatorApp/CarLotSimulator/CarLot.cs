@@ -10,7 +10,8 @@ namespace CarLotSimulator
         {
             TheLot = new List<Vehicle>();
         }
-        public List<Vehicle> TheLot { get; set; }
+        internal List<Vehicle> TheLot { get; set; }
+        internal static int numberOfVehicles = 0;
 
         public void TakeInventory()
         {
