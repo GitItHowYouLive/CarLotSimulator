@@ -63,7 +63,7 @@ namespace CarLotSimulator
                     case "y":
                     case "yep":
                         RBCustoms.WinAuction();
-                        Console.WriteLine("Have you added any new cars to the lot?");
+                        Console.WriteLine("\nHave you added any other new cars to the lot?");
                         break;
                     case "no":
                     case "n":
@@ -77,6 +77,9 @@ namespace CarLotSimulator
             }
 
             RBCustoms.TakeInventory();
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
         }
     }
 }
